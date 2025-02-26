@@ -4,8 +4,8 @@ class EntriesController < ApplicationController
   end
 
   def show
-    @entries = Entry.find_by({ "id" => params["id"] })
-    # find Contacts for the Company
+    @entries = Place.find_by({ "name" => params["name"] })
+    @places = Entry.where({ "place_id" => @places["id"] })
   end
 
   def new
