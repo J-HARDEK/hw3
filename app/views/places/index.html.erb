@@ -1,5 +1,10 @@
-<h1> Places I've Been </h1>
+<h1> Places I've Been: </h1>
 <p></p>
   <% for place in @places %>
-      <h4><%= place["name"] %></h4>
+  <h3><a href="/entries/<%= place["name"]%>"><%= place["name"] %></a></h3>
   <% end %>
+
+
+<h4><a href="/places/new">Click Here to Enter a New Place</a></h4>
+    
+<%#<h4><%= place["name"] %><h4>-delete</h4>

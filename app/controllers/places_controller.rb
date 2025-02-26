@@ -3,6 +3,12 @@ class PlacesController < ApplicationController
     @places = Place.all
   end
 
+  def show
+  end
+
+  def new
+  end
+
   def create
     #   # start with a new Place
     @places = Place.new
@@ -13,4 +19,5 @@ class PlacesController < ApplicationController
     #   # redirect user
     redirect_to "/places"
     end
+
 end
