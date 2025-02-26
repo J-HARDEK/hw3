@@ -1,5 +1,6 @@
 <h1>New Event Entry</h1>
-<form action="/entries/<%= @entry["place_id"]%>" method="post">
+<form action="/entries" method="post">
+  <input type="hidden" name="place_id" value="<%= @entry["place_id"] %>">
   <p>
     <label for="title">Entry Title</label>
     <input type="text" name="title" id="title">
