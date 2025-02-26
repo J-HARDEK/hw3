@@ -4,6 +4,8 @@ class EntriesController < ApplicationController
   end
 
   def show
+    @entries = Entry.find_by({ "id" => params["id"] })
+    # find Contacts for the Company
   end
 
   def new
